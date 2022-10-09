@@ -1,0 +1,92 @@
+{
+  "name": "movie-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.22.5",
+    "axios": "^0.27.2",
+    "formik": "^2.2.9",
+    "history": "^5.3.0",
+    "jsbarcode": "^3.11.5",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "query-string": "^7.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loading-skeleton": "^3.1.0",
+    "react-lottie": "^1.2.3",
+    "react-modal-video": "^1.2.10",
+    "react-player": "^2.11.0",
+    "react-redux": "^8.0.2",
+    "react-responsive": "^9.0.0",
+    "react-router-dom": "6.3.0",
+    "react-scripts": "next",
+    "react-slick": "^0.29.0",
+    "react-spinners": "^0.13.4",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "sass": "^1.54.9",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.5",
+    "twin.macro": "^2.8.2",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "resolutions": {
+    "styled-components": "^5"
+  },
+  "scripts": {
+    "start": "set PORT=3006 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "npx eslint src test",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier src test --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "babelMacros": {
+    "twin": {
+      "config": "./tailwind.config.js",
+      "preset": "styled-components"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/eslint-parser": "^7.5.4",
+    "@babel/preset-react": "^7.18.6",
+    "@emotion/babel-plugin": "^11.10.0",
+    "eslint": "^8.21.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8",
+    "webpack": "^5.74.0"
+  }
+}

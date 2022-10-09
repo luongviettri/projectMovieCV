@@ -1,0 +1,95 @@
+.ticket {
+  width: auto;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 1)),
+    url("../../Assets/Images/capsule_616x353.jpg");
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 4%;
+  border-bottom-left-radius: 4%;
+  position: relative;
+  overflow: hidden;
+}
+
+.holes-top {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+}
+.holes-top:before,
+.holes-top:after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+}
+.holes-top:before {
+  left: -480%;
+}
+.holes-top:after {
+  left: 480%;
+}
+
+.holes-lower {
+  position: relative;
+  border: 1px dashed #0404ff;
+}
+.holes-lower:before,
+.holes-lower:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+}
+.holes-lower:before {
+  top: -25px;
+  left: -10%;
+}
+.holes-lower:after {
+  top: -25px;
+  right: -10%;
+}
+
+.title {
+  padding: 50px 25px 10px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+table tr {
+  margin-bottom: 10px;
+}
+table th {
+  text-align: left;
+}
+table th:nth-of-type(1) {
+  width: 38%;
+}
+table th:nth-of-type(2) {
+  width: 40%;
+}
+table th:nth-of-type(3) {
+  width: 15%;
+}
+table td {
+  width: 33%;
+  font-size: 1.5rem;
+}
+
+#barcode {
+  width: 100%;
+  transform: translate(50%, 0);
+}
