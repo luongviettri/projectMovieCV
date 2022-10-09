@@ -130,7 +130,7 @@ const AdminLayout = () => {
             textAlign: "center",
             backgroundColor: "gray"
           }}>
-          Sun Design ©2022 Created by Sun's Team
+          Việt Trí Design ©2022 Created by Tri's Team
         </Footer>
       </Layout>
     </Layout>

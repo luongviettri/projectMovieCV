@@ -7,7 +7,7 @@ function AboutHomePage() {
   let data = [
     { tab: "About Us", Jsx: <About.AboutUs /> },
     { tab: "Hall", Jsx: <About.Hall /> },
-    { tab: "About Đông Sun", Jsx: <About.Sunny /> },
+    { tab: "About Việt Trí", Jsx: <About.Sunny /> },
     { tab: "From Lao's East", Jsx: <About.VN /> }
   ];
   return (

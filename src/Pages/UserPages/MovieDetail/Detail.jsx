@@ -32,8 +32,8 @@ function Detail(props) {
           </div>
           <p>{moTa}</p>
           <ul>
-            <li>Director: Sun</li>
-            <li>Actor: Sun</li>
+            <li>Director: Trí</li>
+            <li>Actor: Trí</li>
             <li>Country: Viet Nam</li>
             <li>Language: VietNamese</li>
           </ul>

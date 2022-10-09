@@ -8,7 +8,7 @@ function LogoDesc({ textSmall }) {
         <img className="h-full w-1/2" src={`${Images.gifLogo}`} alt="..." />
       </div>
       <div className="text-md w-1/2">
-        <p>Đông Sun</p>
+        <p>Việt Trí</p>
         <p>Cinema</p>
       </div>
     </div>
@@ -18,7 +18,7 @@ function LogoDesc({ textSmall }) {
         <img className="h-full w-full" src={`${Images.gifLogo}`} alt="..." />
       </div>
       <div className="h-40 w-2/3 text-5xl font-bold text-white">
-        <p>Đông Sun</p>
+        <p>Việt Trí</p>
         <p>Cinema</p>
         <p>Center</p>
       </div>
