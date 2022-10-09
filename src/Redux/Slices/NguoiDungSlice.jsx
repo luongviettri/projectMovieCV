@@ -31,6 +31,7 @@ const NguoiDungSlice = createSlice({
       history.back();
     },
     [setUserLogin.rejected]: (_, { payload }) => {
+      message.error("Sai tài khoản hoặc mật khẩu");
       console.log("slice handle ERROR");
       console.log(payload);
     },

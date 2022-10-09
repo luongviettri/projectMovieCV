@@ -9,7 +9,6 @@ import { setAlert } from "../Slices/AlertSlice";
 import LoadingSlice, { display_loading, hide_loading } from "../Slices/LoadingSlice";
 
 const setUserLogin = createAsyncThunk("NguoiDungThunk/Login", async (thongTinDangNhap, { rejectWithValue }) => {
-  console.log('thongTinDangNhap: ', thongTinDangNhap);
   try {
     const result = await QuanLyNguoiDungService.DangNhap(thongTinDangNhap);
     return result;
