@@ -10,12 +10,11 @@ import { AudioOutlined, SearchOutlined, EditOutlined, DeleteOutlined, CalendarOu
 import { QuanLyPhimThunks } from "../../../Redux/Thunks/PhimThunk";
 const { Search } = Input;
 function PgManageFilm() {
-
   const { danhSachPhim: filmList } = useSelector(state => state.QuanLyPhimSlice);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(QuanLyPhimActions.setActiveKeyAction(2));
-  }, [])
+  }, []);
   const navigate = useNavigate();
   // ! debounce search
   const searchRef = useRef(null);
@@ -133,7 +132,6 @@ function PgManageFilm() {
                 <EditOutlined />
               </span>
             </NavLink>
-
             <span
               onClick={() => {
                 handleDeleteFilm(record.maPhim);

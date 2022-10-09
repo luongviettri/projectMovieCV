@@ -116,7 +116,6 @@ const deleteFilm = createAsyncThunk("QuanLyPhimThunk/XoaPhim", async (maPhim, { 
 const editFilm = createAsyncThunk(
   "QuanLyPhimThunk/CapNhatPhimUpload",
   async (FilmEdited, { rejectWithValue, dispatch }) => {
-
     dispatch(display_loading());
     try {
       const result = await QuanLyPhimService.CapNhatPhimUpload(FilmEdited);

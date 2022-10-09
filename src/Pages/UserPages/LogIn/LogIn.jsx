@@ -9,7 +9,7 @@ function LogIn() {
   const navigate = useNavigate();
   useEffect(() => {
     if (localService.getUserInfo()) {
-      navigate(-1, { replace: true });
+      navigate(-1, { replace: true }); k
     }
   }, []);
   return (

@@ -26,6 +26,8 @@ const NguoiDungSlice = createSlice({
   extraReducers: {
     //! Login
     [setUserLogin.fulfilled]: (state, { payload }) => {
+      message.success("Đăng nhập thành công");
+
       state.userLogin = payload.content;
       localService.setUserInfo(payload.content);
       history.back();
