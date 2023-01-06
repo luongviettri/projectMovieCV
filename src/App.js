@@ -34,6 +34,7 @@ import About from "./Pages/UserPages/About/About";
 import Schedule from "./Pages/UserPages/Schedule/Schedule";
 import { unstable_HistoryRouter as HistoryRouter } from "react-router-dom";
 import PgExport from "./Pages/AdminPages/PgExport";
+import ComingSoonAnimation from "./Assets/lotties/ComingSoonAnimation";
 export const history = createBrowserHistory();
 function App() {
   const isDesktopOrLaptop = useMediaQuery({
@@ -43,8 +44,10 @@ function App() {
   return (
     <HistoryRouter history={history}>
       {!isDesktopOrLaptop ? (
-        <Construction />
+        // <Construction />
+        <ComingSoonAnimation />
       ) : (
+        // <>ok</>
         <Routes>
           <Route path="/" element={<WelcomePage />} />
           <Route path="/login" element={<LogIn />} />
@@ -69,7 +72,7 @@ function App() {
             <Route path="films/add" element={<CompAddFilm />} />
             <Route path="films/edit/:id" element={<CompEditFilm />} />
             <Route path="users" element={<PgManageUsers />} />
-            <Route path="users/add" element={< CompAddUser />} />
+            <Route path="users/add" element={<CompAddUser />} />
             <Route path="users/edit/:account" element={<CompEditUser />} />
             <Route path="tickets" element={<PgManageTicket />} />
             <Route path="export" element={<PgExport />} />
